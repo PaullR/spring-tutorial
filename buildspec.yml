@@ -1,7 +1,18 @@
 version: 0.2
 
+env:
+  variables:
+    VARIABLE1: "An Environment Variable"
+
 phases:
   build:
     commands:
       - mvn clean install
       - echo Build started on `date`
+  post_build:
+    commands:
+      - echo This is $VARIABLE1
+
+artifacts:
+  files:
+    - target/java-artifacts.zip
