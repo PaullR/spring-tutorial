@@ -15,4 +15,4 @@ phases:
 
 artifacts:
   files:
-    - target/java-artifacts.zip
+    - target/spring-tutorials-0.0.1-SNAPSHOT.jar
